@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Pedia</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    section {
+        height: 100vh;
+    }
+
+
+
+    .maincontainer {
+        overflow-y: scroll;
+        height: 100vh;
+    }
+
+    .one::before {
+        content: "";
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        opacity: 1;
+        background: url("11.jpg") no-repeat center center/cover;
+        /* background-color: rgb(169, 199, 204); */
+    }
+
+    .main {
+        display: flex;
+    }
+
+
+    .head {
+        font-family: 'Montserrat';
+        font-weight: bolder;
+        text-align: center;
+        font-size: 35px;
+        padding: 30px;
+        margin: 4px;
+        color: #fcfbfb;
+
+    }
+
+    .mcont {
+        position: relative;
+        width: 290px;
+        height: 260px;
+        background-color: #E4CFA9;
+        left: 127px;
+        border-radius: 10px;
+    }
+
+    .thecard:hover {
+        transform: rotateY(180deg);
+    }
+
+    .thecard {
+        border-radius: 10px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease;
+        background-color: #E4CFA9;
+    }
+
+    .frontcard {
+        border: 1px solid white;
+        border-radius: 10px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+
+    img {
+        width: 268px;
+        position: relative;
+        height: 258px;
+        border-radius: 8px;
+    }
+
+    .backcard {
+        border-radius: 10px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        color: #E4CFA9;
+        background-color: #002939;
+        text-align: center;
+        font-family: 'Montserrat';
+        transform: rotateY(180deg);
+    }
+
+    p {
+        padding: 5px;
+        margin: 2px;
+        font-size: 20px;
+    }
+
+    .mcont1 {
+        position: relative;
+        width: 290px;
+        height: 260px;
+        background-color: #E4CFA9;
+        left: 250px;
+        border-radius: 10px;
+    }
+
+    .mcont2 {
+        position: relative;
+        width: 290px;
+        height: 260px;
+        background-color: #E4CFA9;
+        left: 370px;
+        border-radius: 10px;
+    }
+
+    .mcont3 {
+        position: relative;
+        width: 290px;
+        height: 260px;
+        background-color: #E4CFA9;
+        left: -80px;
+        top: 320px;
+        border-radius: 10px;
+    }
+
+    .mcont4 {
+        position: relative;
+        width: 290px;
+        height: 260px;
+        background-color: #E4CFA9;
+        left: -753px;
+        border-radius: 10px;
+        top: 320px;
+    }
+</style>
+
+<body>
+    <div class="maincontainer">
+        <section class="one">
+            <h1 class="head">Solar Pedia</h1>
+            <div class="main">
+                <div class="mcont">
+                    <div class="thecard">
+                        <div class="frontcard">
+                            <img src="sp1.jpeg" alt="" srcset="">
+                        </div>
+                        <div class="backcard">
+                            <p>CITY CORUSCATE </p>
+                            <p> Situated in the glistering heats of Mars this city might illuminate your soul.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mcont1">
+                    <div class="thecard">
+                        <div class="frontcard">
+                            <img src="sp2.jpeg" alt="" srcset="">
+                        </div>
+                        <div class="backcard">
+                            <p>CITY EURODEL </p>
+                            <p> Colder than the earth's arctic, this place is known for the sparse species of colder
+                                nerve.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mcont2">
+                    <div class="thecard">
+                        <div class="frontcard">
+                            <img src="sp3.jpeg" alt="" srcset="">
+                        </div>
+                        <div class="backcard">
+                            <p>CITY VERDANT </p>
+                            <p> The evergreen grown here is the rarest of all planets, capital of Europa one of the moon
+                                of Saturn.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mcont3">
+                    <div class="thecard">
+                        <div class="frontcard">
+                            <img src="sp4.jpeg" alt="" srcset="">
+                        </div>
+                        <div class="backcard">
+                            <p>CITY SCRADIED </p>
+                            <p>The marvel of this architecture is only half-seen, the beauty will be touched once you be
+                                there.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mcont4">
+                    <div class="thecard">
+                        <div class="frontcard">
+                            <img src="sp5.jpeg" alt="" srcset="">
+                        </div>
+                        <div class="backcard">
+                            <p>CITY BUYONTEL </p>
+                            <p> One of the most loved cities to venture submerged houses.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
